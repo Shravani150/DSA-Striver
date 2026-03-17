@@ -71,7 +71,46 @@ public class Pattern1 {
             }
             System.out.println();
         }
-
+    }
+    static void pattern8(int n){
+        for(int i=n-1;i>=0;i--){
+            for(int j=0;j<n-1-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<2*i+1;j++){
+                System.out.print('*');
+            }
+            for(int j=0;j<n-1-i;j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern9(int n){
+        for(int i=0; i<n;i++){
+            for(int j=0;j<n-i-1;j++){
+                System.out.print(" ");
+            }
+            for(int j=0; j<2*i+1;j++){
+                System.out.print('*');
+            }
+            for(int j=0;j<n-i-1;j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+        for(int i=n-1;i>=0;i--){
+            for(int j=0;j<n-1-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<2*i+1;j++){
+                System.out.print('*');
+            }
+            for(int j=0;j<n-1-i;j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
     }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
@@ -90,6 +129,10 @@ public class Pattern1 {
         pattern6(num);
         System.out.println();
         pattern7(num);
+        System.out.println();
+        pattern8(num);
+        System.out.println();
+        pattern9(num);
         System.out.println();
         sc.close();
     }
